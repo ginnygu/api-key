@@ -8,5 +8,5 @@ let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imper
 fetch(url)
     .then((data) => data.json())
     .then((newData) => {
-       console.log(newData)
+       console.log(`${newData.name}`)
     })
